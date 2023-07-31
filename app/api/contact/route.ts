@@ -113,14 +113,14 @@ export async function POST(req: Request, response: Response) {
         //         ciphers: 'SSLv3'
         //     },
         auth: {
-            user: "tomas.dibacco@25watts.com.ar",
-            pass: `slarpkfadzbvvaah`
+            user: "lisandro.juncos@25watts.com.ar",
+            pass: `${process.env.NEXT_PUBLIC_NODEMAILER_PASS}` 
         }
     });
 
     const mailOptions = {
         from: "NODEMAILER",
-        to: "tomas.dibacco@25watts.com.ar",
+        to: "lisandro.juncos@25watts.com.ar",
         subject: "Practicando con nodemailer!",
         html: contentHtml,
         // text: ""

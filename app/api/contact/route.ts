@@ -107,14 +107,14 @@ export async function POST(req: Request, response: Response) {
     const nodemailer = require("nodemailer");
     const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        port: 465, // 465,
-        secure: true, // true
+        port: 587, // 465,
+        secure: false, // true
         //     tls: {
         //         ciphers: 'SSLv3'
         //     },
         auth: {
             user: "tomas.dibacco@25watts.com.ar",
-            pass: `${process.env.NEXT_PUBLIC_NODEMAILER_PASS}`
+            pass: `slarpkfadzbvvaah`
         }
     });
 

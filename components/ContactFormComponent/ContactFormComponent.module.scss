@@ -7,7 +7,6 @@
 
     @media (max-width:1030px) {
         margin-bottom: 15rem;
-
     }
 
     .form {
@@ -67,7 +66,7 @@
                     border: none;
                     border-bottom: 2px solid var(--secondary-color);
                     background-color: transparent;
-                    color: var(--tertiary-gradiant-color);
+                    color: var(--primary-color);
                     font-size: var(--font-medium);
                     font-weight: var(--font-regular);
 
@@ -97,7 +96,7 @@
 
             .container-selection {
                 display: flex;
-                gap: 0.8rem;
+                gap: 1.6rem;
                 justify-content: flex-start;
                 min-width: 100%;
                 max-width: 100%;
@@ -272,12 +271,11 @@
                 font-family: var(--font-roboto);
                 font-size: var(--font-xsmall);
                 font-weight: var(--font-regular);
-                transition: 0.1s ease-in-out;
+                transition: background 0.3s ease-in-out;
 
                 &:hover {
-                    background: var(--primary-gradiant-color);
-                    color: var(--prmary-color);
-                    transition: 0.1s ease-in-out;
+                    background: #DBAE8B;
+                    color: var(--tertiary-color);
                 }
             }
         }

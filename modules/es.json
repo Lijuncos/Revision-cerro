@@ -212,7 +212,7 @@
                         },
                         {
                             "text_id": 2,
-                            "text": "nace del conjunto y unión de sinergias en Málaga (España) en 1998.",
+                            "text": "nace del conjunto y unión de sinergias en Málaga (España) en 1998. ",
                             "bold": false
                         },
                         {
@@ -327,23 +327,24 @@
         "titleLink": "contacto",
         "map": {
             "coordinates": {
-                "lat": -31.360887356090007,
-                "lng": -64.21189927740524
+                "lat": -31.412890,
+                "lng": -64.190320
             },
             "popUp": {
                 "title": "CERRO GROUP",
-                "subtitle": "Telefono: +54 1144444444",
+                "subtitle": "Telefono: +54 351 3049928",
                 "linkTitle": "Dirección",
-                "link": "https://www.google.com/maps/dir/?api=1&destination=9%20de%20Julio%20463,%20X5000%20EMI,%20C%C3%B3rdoba,%20Argentina",
+                "link": "https://www.google.com/maps/dir/Your+Location/-31.412890,-64.190320",
                 "coordinates": {
-                    "lat": -31.360887356090007,
-                    "lng": -64.21189927740524
+                    "lat": -31.412890,
+                    "lng": -64.190320
                 }
             }
         },
         "countryCards": [
             {
                 "card_id": 1,
+                "isActive": true,
                 "image": {
                     "imgSrc": "/assets/img/contact/bandera-argentina.webp",
                     "imgAlt": "Bandera argentina",
@@ -374,6 +375,7 @@
             },
             {
                 "card_id": 2,
+                "isActive": false,
                 "image": {
                     "imgSrc": "/assets/img/contact/bandera-alemania.webp",
                     "imgAlt": "Bandera alemana",
@@ -404,6 +406,7 @@
             },
             {
                 "card_id": 3,
+                "isActive": false,
                 "image": {
                     "imgSrc": "/assets/img/contact/bandera-spain.webp",
                     "imgAlt": "Bandera española",
@@ -543,6 +546,6 @@
                 "originalHeight": "30"
             }
         ],
-        "copyright": "© 2023 CERRO GROUP | Desarrollo por 25Watts | Todos los derechos reservados"
+        "copyright": "© 2023 CERRO GROUP  |  Diseñado y desarrollado por 25Watts  |  Todos los derechos reservados"
     }
 }

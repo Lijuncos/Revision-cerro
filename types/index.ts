@@ -22,6 +22,7 @@ export interface BannerSliderInterface extends ImageInterface {
 
 export interface ContactCountryCard {
     card_id: number,
+    isActive: boolean,
     image: ImageInterface,
     title: string,
     address: AddressData,

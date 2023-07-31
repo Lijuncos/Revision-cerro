@@ -111,9 +111,7 @@ export default function ContactFormContainer() {
                 vehiculos: "",
                 otros: "",
             })
-            return
         }
-        alert("Error al enviar el email!")
     };
 
     return <ContactFormComponent

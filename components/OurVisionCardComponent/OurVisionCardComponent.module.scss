@@ -47,12 +47,15 @@
     }
 
     @media (max-width:442px) {
-        align-items: center;
+        --timeline-image-print-height: 11rem;
+        align-items: right;
     }
 
     @media (max-width:350px) {
         --timeline-image-print-height: 10rem;
-
+    }
+    @media (max-width:320px) {
+        --timeline-image-print-height: 9rem;
     }
 
     .container-outer-timeline-image {
@@ -113,11 +116,6 @@
             max-height: revert;
         }
 
-        @media (max-width:442px) {
-            min-width: 100%;
-            max-width: 100%;
-        }
-
         .timeline-description {
             text-align: left;
 
@@ -126,14 +124,6 @@
 
                 @media (max-width:992px) {
                     text-align: left;
-                }
-            }
-
-            @media (max-width:442px) {
-                text-align: center;
-
-                &.isRight {
-                    text-align: center;
                 }
             }
 

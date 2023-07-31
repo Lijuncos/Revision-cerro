@@ -40,6 +40,10 @@
         pointer-events: none;
         transition: 0.3s ease;
         mask-image: linear-gradient(to top, transparent, black);
+
+        @media (max-width: 992px) {
+        mask-image: none;
+        }
     }
 
 

@@ -1,7 +1,9 @@
 :root {
+  /*fonts family*/
   --fallback-font: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-primary: 'Open Sans', sans-serif;
   /* fonts sizes */
   --font-large: 2rem;
   --font-xmedium: 1.5rem;
@@ -39,7 +41,7 @@
   --wrapper-medium: calc(100vw - 5rem);
   --wrapper-small: calc(100vw - 3rem);
   --wrapper-tiny: calc(100vw - 1.5rem);
-  --wrapper-gap: 5rem;
+  --wrapper-gap: 7.5rem;
   /* scrollbar */
   --scrollbar-width: 0.5rem;
 }
@@ -67,7 +69,7 @@ body {
   background: var(--bg-body-color);
 
   color: var(--primary-color);
-  font-family: var(--font-roboto), var(--fallback-font);
+  font-family: var(--font-primary), var(--fallback-font);
   font-size: calc(14px + (20.56 - 14) * ((100vw - 280px) / (3840 - 280)));
   font-weight: var(--font-regular);
   position: absolute;
@@ -100,5 +102,5 @@ small,
 strong,
 span,
 a {
-  font-family: var(--font-roboto), var(--fallback-font);
+  font-family: var(--font-primary), var(--fallback-font);
 }

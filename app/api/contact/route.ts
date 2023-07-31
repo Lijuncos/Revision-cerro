@@ -107,20 +107,20 @@ export async function POST(req: Request, response: Response) {
     const nodemailer = require("nodemailer");
     const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
-        port: 587, // 465,
-        secure: false, // true
+        port: 465, // 465,
+        secure: true, // true
         //     tls: {
         //         ciphers: 'SSLv3'
         //     },
         auth: {
-            user: "lisandro.juncos@25watts.com.ar",
-            pass: `${process.env.NEXT_PUBLIC_NODEMAILER_PASS}` 
+            user: "tomas.dibacco@25watts.com.ar",
+            pass: `${process.env.NODEMAILER_PASS}`
         }
     });
 
     const mailOptions = {
         from: "NODEMAILER",
-        to: "lisandro.juncos@25watts.com.ar",
+        to: "tomas.dibacco@25watts.com.ar",
         subject: "Practicando con nodemailer!",
         html: contentHtml,
         // text: ""

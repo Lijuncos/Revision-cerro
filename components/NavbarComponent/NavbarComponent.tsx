@@ -41,7 +41,7 @@ export default function NavbarComponent({
                     {
                         Object.values(data.navbar.navigtaion).map((textItem: Props) => {
                             const isActive = activeItemId === textItem.text_id;
-                            
+
                             return (
                                 <a href={textItem.link} key={textItem.text_id} className={styles["text-item"]}>
                                     <div
@@ -76,12 +76,12 @@ export default function NavbarComponent({
                     <div className={styles["container-show-menu"]} ref={menuRef}>
                         <button
                             className={styles["button-mobile-menu"]}
-                            onClick={handleShowMenu}>X</button>
+                            onClick={handleShowMenu}>x</button>
                         {
                             Object.values(data.navbar.navigtaion).map((textItem: Props) => {
                                 return (
                                     <a href={textItem.link} key={textItem.text_id}>
-                                        <p className={`${styles["title-navigation"]}`}>
+                                        <p onClick={handleShowMenu} className={`${styles["title-navigation"]}`}>
                                             {textItem.title}
                                         </p>
                                     </a>

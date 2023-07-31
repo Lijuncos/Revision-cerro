@@ -42,7 +42,7 @@
             gap: 1.8rem;
 
             .container-outer-icon {
-                --icon-container-print: 2rem;
+                --icon-container-print: 1.7rem;
                 --icon-container-inner-proportion: calc(var(--icon-container-print) * 0.9666);
                 min-height: var(--icon-container-print);
                 max-height: var(--icon-container-print);
@@ -54,16 +54,16 @@
                 overflow: hidden;
 
                 @media (max-width:992px) {
-                    --icon-container-print: 1.8rem;
+                    --icon-container-print: 1.5rem;
                 }
 
-                @media (max-width:768px) {
-                    --icon-container-print: 1.7rem;
-                }
+                // @media (max-width:768px) {
+                //     --icon-container-print: 1.5rem;
+                // }
 
-                @media (max-width:442px) {
-                    --icon-container-print: 1.6rem;
-                }
+                // @media (max-width:442px) {
+                //     --icon-container-print: 1.4rem;
+                // }
 
                 .container-inner-icon {
                     position: relative;

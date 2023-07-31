@@ -44,11 +44,11 @@
             width: 100%;
             height: 100%;
             opacity: 0;
-            transition: opacity 1.3s ease-in-out; // suavidad hacia la siguiente imagen
+            transition: opacity 1s ease-in-out; // suavidad hacia la siguiente imagen
 
             &.active {
-                opacity: 1.2;
-                transition: opacity 1.3s ease-in-out; // suavidad hacia la siguiente imagen
+                opacity: 1;
+                transition: opacity 1s ease-in-out; // suavidad hacia la siguiente imagen
             }
         }
     }

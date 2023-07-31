@@ -8,7 +8,7 @@ export default function ContactCountryCardComponent({
     data: ContactCountryCard
 }) {
     return (
-        <a className={styles["containter-section-country-card"]} href={`tel:${data.phone.number}`}>
+        <a className={`${styles["containter-section-country-card"]} ${data.isActive ? styles["bg-active"] : ""}`} href={`tel:${data.phone.number}`}>
             <div className={styles["country-card-header"]}>
                 <div className={styles["container-outer-country-image"]}>
                     <div className={styles["container-inner-country-image"]}>

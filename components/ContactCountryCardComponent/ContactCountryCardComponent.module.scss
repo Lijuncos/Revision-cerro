@@ -19,8 +19,12 @@
     &:hover {
         background: var(--bg-color-blur-cards);
         border: 1px solid var(--bg-color-blur-cards);
-
         transition: background 0.15s ease-in-out;
+    }
+
+    &.bg-active {
+        background: var(--bg-color-blur-cards);
+        border: 1px solid var(--bg-color-blur-cards);
     }
 
     @media (max-width:1300px) {

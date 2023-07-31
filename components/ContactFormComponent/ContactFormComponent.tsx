@@ -66,7 +66,7 @@ export default function ContactFormComponent({ handleSubmit, formValues, radioVa
                             type="text" name="lastname" value={formValues.lastname} onChange={handleChange} />
                     </label>
                     <label className={styles["container-label"]}>
-                        Telefono
+                        Teléfono
                         <input
                             required
                             className={styles["container-input"]}
@@ -74,7 +74,7 @@ export default function ContactFormComponent({ handleSubmit, formValues, radioVa
                             type="text" name="phone" value={formValues.phone} onChange={handleChange} />
                     </label>
                     <label className={styles["container-label"]}>
-                        Mail
+                        Email
                         <input
                             className={styles["container-input"]}
                             placeholder="Escriba aquí"

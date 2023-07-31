@@ -114,7 +114,7 @@ export async function POST(req: Request, response: Response) {
         //     },
         auth: {
             user: "tomas.dibacco@25watts.com.ar",
-            pass: `${process.env.NODEMAILER_PASS}`
+            pass: `${process.env.NEXT_PUBLIC_NODEMAILER_PASS}`
         }
     });
 

@@ -1,0 +1,548 @@
+{
+    "navbar": {
+        "logo": {
+            "imgSrc": "/assets/img/logo/cerrogroup-logo.webp",
+            "imgAlt": "Cerro group logo",
+            "proportionX": 0.3469,
+            "proportionY": 2.8823,
+            "originalWidth": "196px",
+            "originalHeight": "68px"
+        },
+        "navigtaion": {
+            "home": {
+                "text_id": "title-1",
+                "title": "Home",
+                "link": "#home"
+            },
+            "servicios": {
+                "text_id": "title-2",
+                "title": "Servicios",
+                "link": "#servicios"
+            },
+            "vision": {
+                "text_id": "title-3",
+                "title": "Visión",
+                "link": "#vision"
+            },
+            "contacto": {
+                "text_id": "title-4",
+                "title": "Contacto",
+                "link": "#contacto"
+            }
+        },
+        "burgerMenuIcon": {
+            "imgSrc": "/assets/icons/navbar/burgermenu-icon.svg",
+            "imgAlt": "Icono menu hamburguesa",
+            "proportionX": 1,
+            "proportionY": 1,
+            "originalWidth": "",
+            "originalHeight": ""
+        }
+    },
+    "banner": {
+        "titleLink": "home",
+        "images": [
+            {
+                "banner_id": 1,
+                "imgSrc": "/assets/img/banner/banner1.webp",
+                "imgAlt": "Imagen de oficina",
+                "proportionX": 0.3758,
+                "proportionY": 2.9274,
+                "originalWidth": "1796px",
+                "originalHeight": "675px"
+            },
+            {
+                "banner_id": 2,
+                "imgSrc": "/assets/img/banner/banner2.webp",
+                "imgAlt": "Imagen de oficina",
+                "proportionX": 0.3758,
+                "proportionY": 2.9274,
+                "originalWidth": "1796px",
+                "originalHeight": "675px"
+            },
+            {
+                "banner_id": 3,
+                "imgSrc": "/assets/img/banner/banner3.webp",
+                "imgAlt": "Imagen de oficina",
+                "proportionX": 0.3758,
+                "proportionY": 2.9274,
+                "originalWidth": "1796px",
+                "originalHeight": "675px"
+            },
+            {
+                "banner_id": 4,
+                "imgSrc": "/assets/img/banner/banner4.webp",
+                "imgAlt": "Imagen de oficina",
+                "proportionX": 0.3758,
+                "proportionY": 2.9274,
+                "originalWidth": "1796px",
+                "originalHeight": "675px"
+            }
+        ],
+        "card": {
+            "title": "Mejorando el futuro, gestionando el presente",
+            "brands": [
+                {
+                    "brand_id": 1,
+                    "imgSrc": "/assets/img/banner/cerromotor-logo.webp",
+                    "imgAlt": "Cerro motor logo",
+                    "proportionX": 0.3876,
+                    "proportionY": 2.5795,
+                    "originalWidth": "227px",
+                    "originalHeight": "88px"
+                },
+                {
+                    "brand_id": 2,
+                    "imgSrc": "/assets/img/banner/alexandria-logo.webp",
+                    "imgAlt": "Alexandria logo",
+                    "proportionX": 0.3388,
+                    "proportionY": 2.9508,
+                    "originalWidth": "180px",
+                    "originalHeight": "61px"
+                },
+                {
+                    "brand_id": 3,
+                    "imgSrc": "/assets/img/banner/cerrofreight-logo.webp",
+                    "imgAlt": "Cerro freight logo",
+                    "proportionX": 0.3876,
+                    "proportionY": 2.5795,
+                    "originalWidth": "227px",
+                    "originalHeight": "88px"
+                },
+                {
+                    "brand_id": 4,
+                    "imgSrc": "/assets/img/banner/ecolaundry-logo.webp",
+                    "imgAlt": "Ecolaundry logo",
+                    "proportionX": 0.225,
+                    "proportionY": 4.4444,
+                    "originalWidth": "200px",
+                    "originalHeight": "45px"
+                }
+            ]
+        }
+    },
+    "services": {
+        "title": "Nuestros servicios",
+        "titleLink": "servicios",
+        "cards": [
+            {
+                "id": 1,
+                "icon": {
+                    "iconSrc": "/assets/icons/services/comercio-icon.svg",
+                    "iconAlt": "Icono comercio"
+                },
+                "title": "COMERCIO",
+                "description": "Conectamos negocios en todo el mundo, local e internacionalmente. Abarcamos diversas áreas de actuación y gestionamos de forma rápida y eficiente. Tu negocio es nuestro compromiso."
+            },
+            {
+                "id": 2,
+                "icon": {
+                    "iconSrc": "/assets/icons/services/logistica-icon.svg",
+                    "iconAlt": "Icono logística"
+                },
+                "title": "LOGÍSTICA",
+                "description": "Envíos internacionales rápidos y seguros. Tenemos acuerdos con los principales forwarders de Asia, Europa y Estados Unidos. Garantizamos una logística especializada, nuestra experiencia nos avala."
+            },
+            {
+                "id": 3,
+                "icon": {
+                    "iconSrc": "/assets/icons/services/gestion-icon.svg",
+                    "iconAlt": "Icono gestión"
+                },
+                "title": "GESTIÓN",
+                "description": "Expertos en asesoría jurídica y contable. Optimizamos tus finanzas y presentamos estados contables precisos. Nuestro equipo te asesorará en cada movimiento financiero, tanto in/out."
+            },
+            {
+                "id": 4,
+                "icon": {
+                    "iconSrc": "/assets/icons/services/administracion-icon.svg",
+                    "iconAlt": "Icono administración"
+                },
+                "title": "ADMINISTRACIÓN",
+                "description": "Gestión y control global para tu empresa. Equipos expertos jurídicos y contables en Argentina, Europa y Estados Unidos."
+            },
+            {
+                "id": 5,
+                "icon": {
+                    "iconSrc": "/assets/icons/services/turismoprofesional-icon.svg",
+                    "iconAlt": "Icono turismo profesional"
+                },
+                "title": "TURISMO PROFESIONAL",
+                "description": "Viajes profesionales & empresariales a tu medida: capacitaciones, congresos, convenciones y ferias globales. Colaboramos con las principales cadenas hoteleras en Europa y Estados Unidos."
+            },
+            {
+                "id": 6,
+                "icon": {
+                    "iconSrc": "/assets/icons/services/vehiculos-icon.svg",
+                    "iconAlt": "Icono vehículos"
+                },
+                "title": "VEHÍCULOS",
+                "description": "Vehículos exclusivos para ti. Autos de lujo, motos de alta gama y camiones en perfectas condiciones. Descubre más en www.cerromotor.com."
+            }
+        ]
+    },
+    "vision": {
+        "title": "Nuestra visión",
+        "titleLink": "vision",
+        "timeline": {
+            "icon": {
+                "imgSrc": "/assets/img/vision/timeline-icon.webp",
+                "imgAlt": "Icono",
+                "proportionX": 1,
+                "proportionY": 1,
+                "originalWidth": "82px",
+                "originalHeight": "82px"
+            },
+            "info": [
+                {
+                    "info_id": 1,
+                    "image": {
+                        "imgSrc": "/assets/img/vision/foto-vision1.webp",
+                        "imgAlt": "foto 1",
+                        "proportionX": 0.5659,
+                        "proportionY": 1.7668,
+                        "originalWidth": "576px",
+                        "originalHeight": "326px"
+                    },
+                    "description": [
+                        {
+                            "text_id": 1,
+                            "text": "CERRO GROUP ",
+                            "bold": true
+                        },
+                        {
+                            "text_id": 2,
+                            "text": "nace del conjunto y unión de sinergias en Málaga (España) en 1998.",
+                            "bold": false
+                        },
+                        {
+                            "text_id": 3,
+                            "text": "Especializados en importación y distribución, ",
+                            "bold": true
+                        },
+                        {
+                            "text_id": 4,
+                            "text": "traemos vehículos y accesorios desde toda Europa a España. También logramos ofrecer créditos para la compra de vehículos nuevos y usados, así como importación de maquinaria industrial, agrícola y de construcción.",
+                            "bold": false
+                        }
+                    ],
+                    "rowStyle": true
+                },
+                {
+                    "info_id": 2,
+                    "image": {
+                        "imgSrc": "/assets/img/vision/foto-vision2.webp",
+                        "imgAlt": "foto 2",
+                        "proportionX": 0.5659,
+                        "proportionY": 1.7668,
+                        "originalWidth": "576px",
+                        "originalHeight": "326px"
+                    },
+                    "description": [
+                        {
+                            "text_id": 1,
+                            "text": "Nos adaptamos a la economía global ",
+                            "bold": true
+                        },
+                        {
+                            "text_id": 2,
+                            "text": "y nos enfocamos en la distribución y comercialización de automóviles, motocicletas y vehículos de recreo. ",
+                            "bold": false
+                        },
+                        {
+                            "text_id": 3,
+                            "text": "Realizamos acuerdos con varias entidades ",
+                            "bold": true
+                        },
+                        {
+                            "text_id": 4,
+                            "text": "en Alemania, Rumania y Polonia, siendo partners exclusivos en toda España, norte de África y Portugal. Además, ",
+                            "bold": false
+                        },
+                        {
+                            "text_id": 5,
+                            "text": "incursionamos en el mercado inmobiliario ",
+                            "bold": true
+                        },
+                        {
+                            "text_id": 6,
+                            "text": "para ofrecer inversiones sostenibles y rentables.",
+                            "bold": false
+                        }
+                    ],
+                    "rowStyle": false
+                },
+                {
+                    "info_id": 3,
+                    "image": {
+                        "imgSrc": "/assets/img/vision/foto-vision3.webp",
+                        "imgAlt": "foto 3",
+                        "proportionX": 0.5659,
+                        "proportionY": 1.7668,
+                        "originalWidth": "576px",
+                        "originalHeight": "326px"
+                    },
+                    "description": [
+                        {
+                            "text_id": 1,
+                            "text": "Contamos con ",
+                            "bold": false
+                        },
+                        {
+                            "text_id": 2,
+                            "text": "equipos de abogados, financieros y comerciales ",
+                            "bold": true
+                        },
+                        {
+                            "text_id": 3,
+                            "text": "que funcionan como nuestro staff propio para ofrecer oportunidades en diferentes puntos de Europa que se encuentran en pleno proceso de crecimiento.",
+                            "bold": false
+                        }
+                    ],
+                    "rowStyle": true
+                }
+            ],
+            "header": {
+                "year": "1998"
+            },
+            "footer": {
+                "year": "2008",
+                "description": [
+                    {
+                        "text_id": 1,
+                        "text": "Desde 2008 aportamos nuestro Knowledge en Córdoba, Argentina. ",
+                        "bold": true
+                    },
+                    {
+                        "text_id": 2,
+                        "text": "Establecimos relaciones con entidades financieras, empresas inmobiliarias y distribuidores de vehículos, logrando así ofrecer productos interesantes, inversiones en proyectos europeos, depósitos bancarios, apertura de cuentas y creación de sociedades.",
+                        "bold": false
+                    }
+                ]
+            }
+        }
+    },
+    "contact": {
+        "title": "Contáctanos",
+        "titleLink": "contacto",
+        "map": {
+            "coordinates": {
+                "lat": -31.360887356090007,
+                "lng": -64.21189927740524
+            },
+            "popUp": {
+                "title": "CERRO GROUP",
+                "subtitle": "Telefono: +54 1144444444",
+                "linkTitle": "Dirección",
+                "link": "https://www.google.com/maps/dir/?api=1&destination=9%20de%20Julio%20463,%20X5000%20EMI,%20C%C3%B3rdoba,%20Argentina",
+                "coordinates": {
+                    "lat": -31.360887356090007,
+                    "lng": -64.21189927740524
+                }
+            }
+        },
+        "countryCards": [
+            {
+                "card_id": 1,
+                "image": {
+                    "imgSrc": "/assets/img/contact/bandera-argentina.webp",
+                    "imgAlt": "Bandera argentina",
+                    "proportionX": 1,
+                    "proportionY": 1,
+                    "originalWidth": "78px",
+                    "originalHeight": "78px"
+                },
+                "title": "ARGENTINA",
+                "address": {
+                    "icon": {
+                        "iconSrc": "/assets/icons/contact/location-icon.svg",
+                        "iconAlt": "Icono ubicacion"
+                    },
+                    "direction": {
+                        "title": "- Edificio Central -",
+                        "description": "9 de Julio & Esquina Jujuy",
+                        "location": "Córdoba, Argentina"
+                    }
+                },
+                "phone": {
+                    "icon": {
+                        "iconSrc": "/assets/icons/contact/phone-icon.svg",
+                        "iconAlt": "Icono telefono"
+                    },
+                    "number": "+543513049928"
+                }
+            },
+            {
+                "card_id": 2,
+                "image": {
+                    "imgSrc": "/assets/img/contact/bandera-alemania.webp",
+                    "imgAlt": "Bandera alemana",
+                    "proportionX": 1,
+                    "proportionY": 1,
+                    "originalWidth": "78px",
+                    "originalHeight": "78px"
+                },
+                "title": "DEUTSCHLAND",
+                "address": {
+                    "icon": {
+                        "iconSrc": "/assets/icons/contact/location-icon.svg",
+                        "iconAlt": "Icono ubicacion"
+                    },
+                    "direction": {
+                        "title": "- Wilhelm-Theodor -",
+                        "description": "Römheld-Str.14 Finanz und Hypovereinsbank Büro",
+                        "location": "Mainz, Deutschland"
+                    }
+                },
+                "phone": {
+                    "icon": {
+                        "iconSrc": "/assets/icons/contact/phone-icon.svg",
+                        "iconAlt": "Icono telefono"
+                    },
+                    "number": "+4961312766245"
+                }
+            },
+            {
+                "card_id": 3,
+                "image": {
+                    "imgSrc": "/assets/img/contact/bandera-spain.webp",
+                    "imgAlt": "Bandera española",
+                    "proportionX": 1,
+                    "proportionY": 1,
+                    "originalWidth": "78px",
+                    "originalHeight": "78px"
+                },
+                "title": "ESPAÑA",
+                "address": {
+                    "icon": {
+                        "iconSrc": "/assets/icons/contact/location-icon.svg",
+                        "iconAlt": "Icono ubicacion"
+                    },
+                    "direction": {
+                        "title": "- Via Imperi -",
+                        "description": "Roma,4 ",
+                        "location": "Tarragona, España"
+                    }
+                },
+                "phone": {
+                    "icon": {
+                        "iconSrc": "/assets/icons/contact/phone-icon.svg",
+                        "iconAlt": "Icono telefono"
+                    },
+                    "number": "+349772711158",
+                    "secondNumber": "+34680350089"
+                }
+            }
+        ],
+        "form": {
+            "title": "Formulario de contacto",
+            "fields": {
+                "labels": [
+                    {
+                        "text": "Nombre",
+                        "value": "name",
+                        "placeholder": "Escriba aquí"
+                    },
+                    {
+                        "text": "Apellido",
+                        "value": "lastname",
+                        "placeholder": "Escriba aquí"
+                    },
+                    {
+                        "text": "Teléfono",
+                        "value": "number",
+                        "placeholder": "Escriba aquí"
+                    },
+                    {
+                        "text": "E-mail",
+                        "value": "email",
+                        "placeholder": "Escriba aquí"
+                    }
+                ]
+            },
+            "checkSelect": {
+                "title": "Selecciona todos los temas que desees",
+                "icon": {
+                    "imgSrc": "/assets/icons/contact/check.svg",
+                    "imgAlt": "Check seleccionado"
+                },
+                "checks": [
+                    {
+                        "id": "comercio",
+                        "label": "Comercio"
+                    },
+                    {
+                        "id": "logistica",
+                        "label": "Logística"
+                    },
+                    {
+                        "id": "gestion",
+                        "label": "Gestión"
+                    },
+                    {
+                        "id": "administracion",
+                        "label": "Administración"
+                    },
+                    {
+                        "id": "turismo_profesional",
+                        "label": "Turismo Profesional"
+                    },
+                    {
+                        "id": "vehiculos",
+                        "label": "Vehículos"
+                    },
+                    {
+                        "id": "otros",
+                        "label": "Otros"
+                    }
+                ]
+            },
+            "message": "Mensaje",
+            "placeholder": "Escriba aquí...",
+            "sendButton": "Enviar mensaje"
+        }
+    },
+    "footer": {
+        "logo": {
+            "imgSrc": "/assets/img/logo/cerrogroup-logo.webp",
+            "imgAlt": "Cerro group logo",
+            "proportionX": 0.3469,
+            "proportionY": 2.8823,
+            "originalWidth": "196px",
+            "originalHeight": "68px"
+        },
+        "networks": [
+            {
+                "icon_id": 1,
+                "imgSrc": "/assets/img/networks/facebook-icon.webp",
+                "imgAlt": "Facebook logo",
+                "proportionX": 2.1333,
+                "proportionY": 0.4687,
+                "link": "https://www.facebook.com/<TUUSUARIO>/",
+                "originalWidth": "15",
+                "originalHeight": "32"
+            },
+            {
+                "icon_id": 2,
+                "imgSrc": "/assets/img/networks/instagram-icon.webp",
+                "imgAlt": "Instagram logo",
+                "proportionX": 1.0344,
+                "proportionY": 0.9666,
+                "link": "https://www.instagram.com/<TUUSUARIO>/",
+                "originalWidth": "29",
+                "originalHeight": "30"
+            },
+            {
+                "icon_id": 3,
+                "imgSrc": "/assets/img/networks/whatsapp-icon.webp",
+                "imgAlt": "Whatsapp logo",
+                "proportionX": 1.0344,
+                "proportionY": 0.9666,
+                "link": "https://wa.me/<TUNÚMERODETÉLEFONO>",
+                "originalWidth": "29",
+                "originalHeight": "30"
+            }
+        ],
+        "copyright": "© 2023 CERRO GROUP | Desarrollo por 25Watts | Todos los derechos reservados"
+    }
+}

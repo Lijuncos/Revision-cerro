@@ -1,0 +1,37 @@
+.container-outer-image {
+    --logo-container-print: 3.4rem;
+    --logo-container-inner-proportion: calc(var(--logo-container-print) * 2.8823);
+    min-height: var(--logo-container-print);
+    max-height: var(--logo-container-print);
+    min-width: var(--logo-container-inner-proportion);
+    max-width: var(--logo-container-inner-proportion);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    @media (max-width:992px) {
+        --logo-container-print: 3.2rem;
+    }
+
+    @media (max-width:768px) {
+        --logo-container-print: 3rem;
+    }
+
+    @media (max-width:442px) {
+        --logo-container-print: 2.6rem;
+    }
+
+    .contanier-inner-image {
+        position: relative;
+        min-height: var(--logo-container-print);
+        max-height: var(--logo-container-print);
+        min-width: var(--logo-container-inner-proportion);
+        max-width: var(--logo-container-inner-proportion);
+        user-select: none;
+
+        * {
+            pointer-events: none;
+        }
+    }
+}

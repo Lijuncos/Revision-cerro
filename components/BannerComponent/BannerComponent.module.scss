@@ -1,0 +1,123 @@
+.container-section-banner {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 35rem;
+    max-height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+
+    @media (max-width:1093px) {
+        min-height: 40rem;
+        max-height: 40rem;
+    }
+
+    @media (max-width:615px) {
+        min-height: 41.5rem;
+        max-height: 41.5rem;
+    }
+
+    @media (max-width:540px) {
+        min-height: 53.5rem;
+        max-height: 53.5rem;
+    }
+
+    @media (max-width:340px) {
+        min-height: 55.5rem;
+        max-height: 55.5rem;
+    }
+
+    @media (max-width:288px) {
+        min-height: 57rem;
+        max-height: 57rem;
+    }
+
+    .container-slider {
+        position: relative;
+        display: flex;
+        width: calc(100% * 3);
+
+        .slide-item {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 1.3s ease-in-out; // suavidad hacia la siguiente imagen
+
+            &.active {
+                opacity: 1.2;
+                transition: opacity 1.3s ease-in-out; // suavidad hacia la siguiente imagen
+            }
+        }
+    }
+
+    .container-cards-brands {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        min-width: 85%;
+        max-width: 85%;
+        min-height: 13rem;
+        background-color: var(--bg-color-blur-cards);
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+        gap: 2rem;
+
+        @media (min-width:1480px) {
+            min-width: 72.5rem;
+            max-width: 72.5rem;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            backdrop-filter: blur(3px);
+            filter: blur(3px) opacity(1);
+        }
+
+        .title-brands {
+            position: relative;
+            text-align: center;
+            font-size: var(--font-large);
+            font-weight: var(--font-bold);
+
+            @media (max-width:1093px) {
+                font-size: var(--font-xmedium);
+            }
+        }
+
+        .container-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2.5rem;
+            position: relative;
+
+            @media (max-width:1189px) {
+                gap: 1rem;
+            }
+
+            @media (max-width:1093px) {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-items: center;
+            }
+
+            @media (max-width:540px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+}

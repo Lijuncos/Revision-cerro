@@ -1,0 +1,47 @@
+// .services-title {
+//     position: relative;
+//     font-size: 1.75rem;
+//     color: var(--secondary-color);
+
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         left: 0;
+//         bottom: -1px;
+//         width: 18.75rem;
+//         height: 2px;
+//         background-color: var(--secondary-color);
+//         margin-left: 15.75rem;
+//         margin-bottom: 0.875rem;
+//     }
+// }
+
+.services-title {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    height: 4rem;
+    min-width: 30rem;
+    max-width: 30rem;
+    overflow: hidden;
+
+    @media (max-width:500px) {
+        min-width: 95%;
+        max-width: 95%;
+    }
+
+
+    .services-title-text {
+        position: relative;
+        font-size: 1.75rem;
+        color: var(--secondary-color);
+        white-space: nowrap;
+    }
+
+    .title-line {
+        min-width: 100%;
+        max-width: 100%;
+        background-color: var(--secondary-color);
+        height: 4px;
+    }
+}

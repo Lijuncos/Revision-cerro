@@ -1,0 +1,21 @@
+.marker-label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: fit-content;
+    height: fit-content;
+    color: black;
+    border-radius: 10px;
+    font-family: var(--font-roboto);
+    font-weight: 400;
+
+
+    .mapPopupLink {
+        color: #1a73e8;
+        text-decoration: underline;
+    }
+
+    .mapPopupTitle {
+        font-weight: 700;
+    }
+}

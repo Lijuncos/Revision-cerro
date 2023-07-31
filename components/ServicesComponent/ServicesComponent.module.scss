@@ -1,0 +1,16 @@
+.services-container {
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+
+    .services-cards {
+        min-width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}

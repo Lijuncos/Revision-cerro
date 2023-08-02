@@ -1,12 +1,12 @@
 {
     "navbar": {
         "logo": {
-            "imgSrc": "/assets/img/logo/cerrogroup-logo.webp",
+            "imgSrc": "/assets/img/logo/Loggo-Cerro_motor.webp",
             "imgAlt": "Cerro group logo",
-            "proportionX": 0.3469,
-            "proportionY": 2.8823,
-            "originalWidth": "196px",
-            "originalHeight": "68px"
+            "proportionX": 0.40978,
+            "proportionY": 2.44403,
+            "originalWidth": "1779px",
+            "originalHeight": "729px"
         },
         "navigtaion": {
             "home": {
@@ -84,39 +84,39 @@
             "brands": [
                 {
                     "brand_id": 1,
-                    "imgSrc": "/assets/img/banner/cerromotor-logo.webp",
+                    "imgSrc": "/assets/img/banner/Motor.webp",
                     "imgAlt": "Cerro motor logo",
-                    "proportionX": 0.3876,
-                    "proportionY": 2.5795,
-                    "originalWidth": "227px",
-                    "originalHeight": "88px"
+                    "proportionX": 0.35413,
+                    "proportionY": 2.82352,
+                    "originalWidth": "193px",
+                    "originalHeight": "68px"
                 },
                 {
                     "brand_id": 2,
-                    "imgSrc": "/assets/img/banner/alexandria-logo.webp",
+                    "imgSrc": "/assets/img/banner/Alexandria.webp",
                     "imgAlt": "Alexandria logo",
-                    "proportionX": 0.3388,
-                    "proportionY": 2.9508,
-                    "originalWidth": "180px",
-                    "originalHeight": "61px"
+                    "proportionX": 0.35413,
+                    "proportionY": 2.82352,
+                    "originalWidth": "192px",
+                    "originalHeight": "68px"
                 },
                 {
                     "brand_id": 3,
-                    "imgSrc": "/assets/img/banner/cerrofreight-logo.webp",
+                    "imgSrc": "/assets/img/banner/Freight.webp",
                     "imgAlt": "Cerro freight logo",
-                    "proportionX": 0.3876,
-                    "proportionY": 2.5795,
-                    "originalWidth": "227px",
-                    "originalHeight": "88px"
+                    "proportionX": 0.35413,
+                    "proportionY": 2.82352,
+                    "originalWidth": "192px",
+                    "originalHeight": "70px"
                 },
                 {
                     "brand_id": 4,
-                    "imgSrc": "/assets/img/banner/ecolaundry-logo.webp",
+                    "imgSrc": "/assets/img/banner/ecolaundry.webp",
                     "imgAlt": "Ecolaundry logo",
-                    "proportionX": 0.225,
-                    "proportionY": 4.4444,
-                    "originalWidth": "200px",
-                    "originalHeight": "45px"
+                    "proportionX": 0.35413,
+                    "proportionY": 2.82352,
+                    "originalWidth": "192px",
+                    "originalHeight": "68px"
                 }
             ]
         }
@@ -507,12 +507,12 @@
     },
     "footer": {
         "logo": {
-            "imgSrc": "/assets/img/logo/cerrogroup-logo.webp",
+            "imgSrc": "/assets/img/logo/Loggo-Cerro_motor.webp",
             "imgAlt": "Cerro group logo",
-            "proportionX": 0.3469,
-            "proportionY": 2.8823,
-            "originalWidth": "196px",
-            "originalHeight": "68px"
+            "proportionX": 0.40978,
+            "proportionY": 2.44403,
+            "originalWidth": "1779px",
+            "originalHeight": "729px"
         },
         "networks": [
             {

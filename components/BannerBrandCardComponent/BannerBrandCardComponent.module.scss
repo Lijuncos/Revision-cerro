@@ -2,6 +2,7 @@
     --brand-container-print: 3rem;
     --brand-container-print-height: 5rem;
     --brand-container-print-width: 15rem;
+    --brand-container-inner-proportion: calc(var(--brand-container-print) * 2.82352);
 
     min-height: var(--brand-container-print-height);
     max-height: var(--brand-container-print-height);

@@ -1,6 +1,6 @@
 .container-outer-image {
     --logo-container-print: 3.4rem;
-    --logo-container-inner-proportion: calc(var(--logo-container-print) * 2.8823);
+    --logo-container-inner-proportion: calc(var(--logo-container-print) * 2.44403);  
     min-height: var(--logo-container-print);
     max-height: var(--logo-container-print);
     min-width: var(--logo-container-inner-proportion);

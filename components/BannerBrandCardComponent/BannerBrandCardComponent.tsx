@@ -15,13 +15,6 @@ export default function BannerBrandCardComponent({ imgData }: { imgData: ImageIn
                     priority
                 />
             </div>
-            <style jsx>
-                {`
-                    .${styles["container-outer-brand"]} {
-                    --brand-container-inner-proportion: calc(var(--brand-container-print) * ${imgData.proportionY});
-                    }
-                `}
-            </style>
         </div>
     )
 }

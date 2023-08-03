@@ -119,18 +119,18 @@ export async function POST(req: Request, response: Response) {
         }
     });
 
-    await new Promise((resolve, reject) => {
+    //await new Promise((resolve, reject) => {
         // verify connection configuration
-        transporter.verify(function (error: any, success: any) {
-            if (error) {
-                console.log(error);
-                reject(error);
-            } else {
-                console.log("Server is ready to take our messages");
-                resolve(success);
-            }
-        });
-    });
+        // await transporter.verify(function (error: any, success: any) {
+        //     if (error) {
+        //         console.log(error);
+        //        // reject(error);
+        //     } else {
+        //         console.log("Server is ready to take our messages");
+        //       //  resolve(success);
+        //     }
+        // });
+    //});
 
 
     const mailOptions = {
@@ -141,8 +141,8 @@ export async function POST(req: Request, response: Response) {
         // text: ""
     };
 
-    await new Promise((resolve, reject) => {
-        transporter.sendMail(mailOptions, (error: any, info: any) => {
+    //await new Promise((resolve, reject) => {
+        await transporter.sendMail(mailOptions, (error: any, info: any) => {
             if (error) {
                 console.log(error);
                 return NextResponse.json({ message: "ERROR" }, { status: 500 })
@@ -150,6 +150,6 @@ export async function POST(req: Request, response: Response) {
                 console.log('Email sent: ' + info.response);
             }
         })
-    })
+   // })
     return NextResponse.json({ message: "OKEY" }, { status: 200 })
 }

@@ -114,7 +114,7 @@ export async function POST(req: Request, response: Response) {
         //     },
         auth: {
             user: "lisandro.juncos@25watts.com.ar",
-            pass: `${process.env.NEXT_PUBLIC_NODEMAILER_PASS}`
+            pass: "vtpzalgpsjvfhrrf"
         }
     });
 

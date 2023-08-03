@@ -1,4 +1,6 @@
 import { NextResponse, NextRequest } from "next/server";
+const nodemailer = require("nodemailer");
+
 
 export async function POST(req: Request, response: Response) {
     const body = await req.json();
@@ -88,23 +90,22 @@ export async function POST(req: Request, response: Response) {
                         <li><strong>Email: </strong><a href="mailto:${body.formValues.mail}" class="link">${body.formValues.mail}</a></li>
                         <li><strong>Teléfono: </strong>${body.formValues.phone}</li>
                         <li><strong>Temas: </strong>${Object.keys(body.radioValues).filter((key) =>
-                            body.radioValues[key] !== '').map((item, index, array) => {
-                                return `${body.radioValues[item]}${index < array.length - 1 ? ', ' : ''}`;
-                                    }).join("")}
+        body.radioValues[key] !== '').map((item, index, array) => {
+            return `${body.radioValues[item]}${index < array.length - 1 ? ', ' : ''}`;
+        }).join("")}
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="footer">
-                ${body.formValues.consultation? 
-                    `<p><strong>Mensaje: </strong>${body.formValues.consultation}</p>` : ""}
+                ${body.formValues.consultation ?
+            `<p><strong>Mensaje: </strong>${body.formValues.consultation}</p>` : ""}
             </div>
         </div>
     </body>
     </html>
     `
 
-    const nodemailer = require("nodemailer");
     const transporter = nodemailer.createTransport({
         host: "smtp.gmail.com",
         port: 465, // 465,
@@ -118,6 +119,20 @@ export async function POST(req: Request, response: Response) {
         }
     });
 
+    await new Promise((resolve, reject) => {
+        // verify connection configuration
+        transporter.verify(function (error: any, success: any) {
+            if (error) {
+                console.log(error);
+                reject(error);
+            } else {
+                console.log("Server is ready to take our messages");
+                resolve(success);
+            }
+        });
+    });
+
+
     const mailOptions = {
         from: "NODEMAILER",
         to: "lisandro.juncos@25watts.com.ar",
@@ -126,13 +141,15 @@ export async function POST(req: Request, response: Response) {
         // text: ""
     };
 
-    transporter.sendMail(mailOptions, (error: any, info: any) => {
-        if (error) {
-            console.log(error);
-            return NextResponse.json({ message: "ERROR" }, { status: 500 })
-        } else {
-            console.log('Email sent: ' + info.response);
-        }
+    await new Promise((resolve, reject) => {
+        transporter.sendMail(mailOptions, (error: any, info: any) => {
+            if (error) {
+                console.log(error);
+                return NextResponse.json({ message: "ERROR" }, { status: 500 })
+            } else {
+                console.log('Email sent: ' + info.response);
+            }
+        })
     })
     return NextResponse.json({ message: "OKEY" }, { status: 200 })
 }

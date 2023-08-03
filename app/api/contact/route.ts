@@ -119,18 +119,7 @@ export async function POST(req: Request, response: Response) {
         }
     });
 
-    //await new Promise((resolve, reject) => {
-        // verify connection configuration
-        // await transporter.verify(function (error: any, success: any) {
-        //     if (error) {
-        //         console.log(error);
-        //        // reject(error);
-        //     } else {
-        //         console.log("Server is ready to take our messages");
-        //       //  resolve(success);
-        //     }
-        // });
-    //});
+
 
 
     const mailOptions = {
@@ -141,15 +130,46 @@ export async function POST(req: Request, response: Response) {
         // text: ""
     };
 
-    //await new Promise((resolve, reject) => {
-        await transporter.sendMail(mailOptions, (error: any, info: any) => {
-            if (error) {
-                console.log(error);
-                return NextResponse.json({ message: "ERROR" }, { status: 500 })
-            } else {
-                console.log('Email sent: ' + info.response);
+    const server = await new Promise((resolve, reject) => {
+        // verify connection configuration
+        transporter.verify(function (error: any, success: any) {
+            if (success) {
+                resolve(success)
             }
+            reject(error)
         })
-   // })
+    })
+    if (!server) {
+        return NextResponse.json({ message: "ERROR SERVER" }, { status: 500 })
+    }
+
+    const success = await new Promise((resolve, reject) => {
+        // send mail
+        transporter.sendMail(mailOptions).then((info: any, err: any) => {
+            if (info.response.includes('250')) {
+                resolve(true)
+            }
+            reject(err)
+        })
+    })
+
+    if (!success) {
+        return NextResponse.json({ message: "ERROR SUCCESS" }, { status: 500 })
+
+    }
     return NextResponse.json({ message: "OKEY" }, { status: 200 })
+
 }
+
+// //await new Promise((resolve, reject) => {
+// await transporter.sendMail(mailOptions, (error: any, info: any) => {
+//     if (error) {
+//         console.log(error);
+//         return NextResponse.json({ message: "ERROR" }, { status: 500 })
+//     } else {
+//         console.log('Email sent: ' + info.response);
+//     }
+// })
+// // })
+// return NextResponse.json({ message: "OKEY" }, { status: 200 })
+// }

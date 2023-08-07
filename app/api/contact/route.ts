@@ -107,31 +107,27 @@ export async function POST(req: Request, response: Response) {
     `
 
     const transporter = nodemailer.createTransport({
-        host: "smtp.gmail.com",
+        host: `${process.env.NEXT_PUBLIC_EMAIL_SERVICE}`,
         port: 465, // 465,
         secure: true, // true
         //     tls: {
         //         ciphers: 'SSLv3'
         //     },
         auth: {
-            user: "lisandro.juncos@25watts.com.ar",
-            pass: "vtpzalgpsjvfhrrf"
+            user: `${process.env.NEXT_PUBLIC_EMAIL_USERNAME}`,
+            pass: `${process.env.NEXT_PUBLIC_EMAIL_PASSWORD}`
         }
     });
 
-
-
-
     const mailOptions = {
         from: "NODEMAILER",
-        to: "lisandro.juncos@25watts.com.ar",
+        to: `${process.env.NEXT_PUBLIC_EMAIL_SENDER}`,
         subject: "Practicando con nodemailer!",
         html: contentHtml,
         // text: ""
     };
 
     const server = await new Promise((resolve, reject) => {
-        // verify connection configuration
         transporter.verify(function (error: any, success: any) {
             if (success) {
                 resolve(success)
@@ -144,7 +140,6 @@ export async function POST(req: Request, response: Response) {
     }
 
     const success = await new Promise((resolve, reject) => {
-        // send mail
         transporter.sendMail(mailOptions).then((info: any, err: any) => {
             if (info.response.includes('250')) {
                 resolve(true)
@@ -152,24 +147,8 @@ export async function POST(req: Request, response: Response) {
             reject(err)
         })
     })
-
     if (!success) {
         return NextResponse.json({ message: "ERROR SUCCESS" }, { status: 500 })
-
     }
     return NextResponse.json({ message: "OKEY" }, { status: 200 })
-
 }
-
-// //await new Promise((resolve, reject) => {
-// await transporter.sendMail(mailOptions, (error: any, info: any) => {
-//     if (error) {
-//         console.log(error);
-//         return NextResponse.json({ message: "ERROR" }, { status: 500 })
-//     } else {
-//         console.log('Email sent: ' + info.response);
-//     }
-// })
-// // })
-// return NextResponse.json({ message: "OKEY" }, { status: 200 })
-// }

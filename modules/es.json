@@ -8,26 +8,26 @@
             "originalWidth": "1779px",
             "originalHeight": "729px"
         },
-        "navigtaion": {
+        "navigation": {
             "home": {
                 "text_id": "title-1",
                 "title": "Home",
-                "link": "#home"
+                "link": "home"
             },
             "servicios": {
                 "text_id": "title-2",
                 "title": "Servicios",
-                "link": "#servicios"
+                "link": "servicios"
             },
             "vision": {
                 "text_id": "title-3",
                 "title": "Visión",
-                "link": "#vision"
+                "link": "vision"
             },
             "contacto": {
                 "text_id": "title-4",
                 "title": "Contacto",
-                "link": "#contacto"
+                "link": "contacto"
             }
         },
         "burgerMenuIcon": {
@@ -40,7 +40,7 @@
         }
     },
     "banner": {
-        "titleLink": "home",
+        "sectionLink": "home",
         "images": [
             {
                 "banner_id": 1,
@@ -123,7 +123,7 @@
     },
     "services": {
         "title": "Nuestros servicios",
-        "titleLink": "servicios",
+        "sectionLink": "servicios",
         "cards": [
             {
                 "id": 1,
@@ -183,7 +183,7 @@
     },
     "vision": {
         "title": "Nuestra visión",
-        "titleLink": "vision",
+        "sectionLink": "vision",
         "timeline": {
             "icon": {
                 "imgSrc": "/assets/img/vision/timeline-icon.webp",
@@ -324,7 +324,7 @@
     },
     "contact": {
         "title": "Contáctanos",
-        "titleLink": "contacto",
+        "sectionLink": "contacto",
         "map": {
             "coordinates": {
                 "lat": -31.412890,

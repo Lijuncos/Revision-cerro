@@ -12,8 +12,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        // gap: var(--wrapper-gap);
-        padding-top: 7.5rem;
 
         @media (max-width:992px) {
             min-width: var(--wrapper-medium);

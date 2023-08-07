@@ -10,7 +10,7 @@ dotenv.config();
 
 export default function Home() {
   return (
-    <main id={data.banner.titleLink} className={styles["container-section-main"]}>
+    <main  className={styles["container-section-main"]}>
       <section className={styles["container-wrapper"]}>
         <BannerContainer />
         <ServicesComponent />

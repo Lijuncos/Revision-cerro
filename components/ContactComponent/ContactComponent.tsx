@@ -8,7 +8,7 @@ import { ContactCountryCard } from "@/types";
 
 export default function ContactComponent() {
     return (
-        <div id={data.contact.titleLink} className={styles["container-section-contact"]}>
+        <div id={data.contact.sectionLink} className={styles["container-section-contact"]}>
             <TitleSectionComponent titletext={data.contact.title} />
             <div className={styles["section-contact"]}>
                 <ContactMapContainer />

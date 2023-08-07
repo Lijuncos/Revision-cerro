@@ -15,7 +15,7 @@ interface Props {
 export default function OurVisionComponent() {
 
     return (
-        <div id={data.vision.titleLink} className={styles["container-section-ourvision"]}>
+        <div id={data.vision.sectionLink} className={styles["container-section-ourvision"]}>
             <TitleSectionComponent titletext={data.vision.title}/>
             <div className={styles["container-section-timeline"]}>
                 <div className={styles["header-timeline"]}>
@@ -44,10 +44,11 @@ export default function OurVisionComponent() {
                     }
                     <div className={styles["body-timeline-overlay"]}>
                         <div className={styles["line-divisor"]}>
+                            {/* <div className={styles["line-breakpoint"]} />
                             <div className={styles["line-breakpoint"]} />
-                            <div className={styles["line-breakpoint"]} />
-                            <div className={styles["line-breakpoint"]} />
+                            <div className={styles["line-breakpoint"]} /> */}
                         </div>
+
                     </div>
                 </div>
                 <div className={styles["footer-timeline"]}>

@@ -6,27 +6,29 @@ import BannerCardComponent from "../BannerCardComponent/BannerCardComponent"
 
 export default function BannerComponent({
     currentIndex,
+    images
 }: {
     currentIndex: number;
+    images: any
 }) {
 
     return (
-        <div className={styles["container-section-banner"]}>
+        <div id={data.banner.sectionLink} className={styles["container-section-banner"]}>
             <div className={styles["container-slider"]}>
-                {
-                    data.banner.images.map((slide: BannerSliderInterface, index: number) => (
-                        <div
-                            key={slide.banner_id}
-                            className={`${styles["slide-item"]} ${index === currentIndex ? styles["active"] : ""}`}>
-                            <BannerCardComponent
-                                imgSrc={`${slide.imgSrc}`}
-                                imgAlt={`${slide.imgAlt}`}
-                            />
-                        </div>
-                    ))
+                {images.map((image: BannerSliderInterface, index: number) => {
+                    return (
+                        <BannerCardComponent
+                            currentIndex={currentIndex}
+                            index={index}
+                            key={image.banner_id}
+                            imgSrc={`${image.imgSrc}`}
+                            imgAlt={`${image.imgAlt}`}
+                        />
+                    )
+                })
                 }
             </div>
-            <div  className={styles["container-cards-brands"]}>
+            <div className={styles["container-cards-brands"]}>
                 <p className={styles["title-brands"]}>{data.banner.card.title}</p>
                 <div className={styles["container-cards"]}>
                     {

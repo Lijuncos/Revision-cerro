@@ -1,63 +1,68 @@
-import Image from "next/image"
-import styles from "./NavbarComponent.module.scss"
-import data from "@/modules/es.json"
-import LogoComponent from "../LogoComponent/LogoComponent"
-import { UseScrollPosition } from "@/utils/scroll/useScrollPosition"
-import useOutsideClick from "@/utils/outSideRef/useOutSideClick"
+import { useState, useEffect } from 'react';
+import Image from 'next/image';
+import styles from './NavbarComponent.module.scss';
+import data from '@/modules/es.json';
+import LogoComponent from '../LogoComponent/LogoComponent';
+import BtnScrollComponent from './BtnScrollComponent/BtnScrollComponent';
+import ScrollLayoutComponent from './ScrollLayoutComponent/ScrollLayoutComponent';
+import { HeadersData } from '@/types';
 
 interface Props {
-    text_id: string,
-    title: string,
-    link: string
+    isMenu: boolean;
+    handleClickTitleNavigation: (textItem: string) => void;
+    handleShowMenu: () => void;
+    menuRef: React.RefObject<HTMLDivElement>;
 }
 
 export default function NavbarComponent({
     isMenu,
-    activeItemId,
     handleClickTitleNavigation,
-    handleShowMenu
-}: {
-    isMenu: boolean,
-    activeItemId: string,
-    handleClickTitleNavigation: (textItem: string) => void,
-    handleShowMenu: () => void
-}) {
+    handleShowMenu,
+    menuRef,
+}: Props) {
+    const [activeItem, setActiveItem] = useState<string>('');
 
-    const scroll = UseScrollPosition()
+    // // Detectar la sección activa al cargar la página
+    // useEffect(() => {
+    //     const detectActiveSectionOnLoad = () => {
+    //         const sectionIds = Object.values(data.navbar.navigation).map((textItem: HeadersData) => textItem.link);
+    //         let activeSection = sectionIds[0]; // Default to the first section
 
-    const menuRef = useOutsideClick(() => {
-        if (isMenu) {
-            handleShowMenu();
-        }
-    });
+    //         for (const sectionId of sectionIds) {
+    //             const sectionElement = document.getElementById(sectionId);
+    //             if (sectionElement) {
+    //                 const rect = sectionElement.getBoundingClientRect();
+    //                 if (rect.top <= window.innerHeight / 2 && rect.bottom >= 0) {
+    //                     activeSection = sectionId;
+    //                     break;
+    //                 }
+    //             }
+    //         }
+
+    //         return activeSection;
+    //     };
+
+    //     setActiveItem(detectActiveSectionOnLoad());
+    // }, []);
 
     return (
-        <section className={`
-        ${styles["container-section-navbar"]} 
-        ${scroll > 50 ? styles["blur-background"] : ""}`}>
-            <div className={styles["container-headers"]}>
+        <ScrollLayoutComponent>
+            <div className={styles['container-headers']}>
                 <LogoComponent imgData={data.navbar.logo} />
-                <div className={styles["container-section-menu-desktop"]}>
-                    {
-                        Object.values(data.navbar.navigtaion).map((textItem: Props) => {
-                            const isActive = activeItemId === textItem.text_id;
-
-                            return (
-                                <a href={textItem.link} key={textItem.text_id} className={styles["text-item"]}>
-                                    <div
-                                        id={textItem.text_id}
-                                        className={`${isActive ? styles["circle-item-active"] : styles["circle-item"]}`}
-                                    />
-                                    <p
-                                        className={`${styles["title-navigation"]} ${isActive ? styles["active-text"] : ""}`}
-                                        onClick={() => { handleClickTitleNavigation(textItem.text_id); }}
-                                    >
-                                        {textItem.title}
-                                    </p>
-                                </a>
-                            )
-                        })
-                    }
+                <div className={styles['container-section-menu-desktop']}>
+                    {Object.values(data.navbar.navigation).map((textItem: HeadersData) => (
+                        <BtnScrollComponent
+                            key={textItem.text_id}
+                            isActive={activeItem === textItem.link}
+                            text_id={textItem.text_id}
+                            title={textItem.title}
+                            scrollTo={textItem.link}
+                            handleClickTitleNavigation={(textId) => {
+                            setActiveItem(textId);
+                            handleClickTitleNavigation(textId);
+                            }}
+                        />
+                    ))}
                 </div>
                 <div className={styles["container-section-menu-mobile"]}>
                     <div className={styles["container-outer-menu-mobile"]} onClick={handleShowMenu}>
@@ -78,7 +83,7 @@ export default function NavbarComponent({
                             className={styles["button-mobile-menu"]}
                             onClick={handleShowMenu}>x</button>
                         {
-                            Object.values(data.navbar.navigtaion).map((textItem: Props) => {
+                            Object.values(data.navbar.navigation).map((textItem: HeadersData) => {
                                 return (
                                     <a href={textItem.link} key={textItem.text_id}>
                                         <p onClick={handleShowMenu} className={`${styles["title-navigation"]}`}>
@@ -91,6 +96,6 @@ export default function NavbarComponent({
                     </div>
                 </div>
             }
-        </section>
+        </ScrollLayoutComponent>
     )
 }

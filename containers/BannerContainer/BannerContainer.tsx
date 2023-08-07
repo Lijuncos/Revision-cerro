@@ -21,5 +21,6 @@ export default function BannerContainer() {
 
     return <BannerComponent
         currentIndex={currentIndex}
+        images={data.banner.images}
     />
 }

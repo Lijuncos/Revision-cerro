@@ -11,6 +11,19 @@
     overflow: hidden;
     border: none;
     border-radius: var(--border-radius);
+    margin-top: 7.5rem;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+    &.active {
+        opacity: 1;
+    }
+
 
     @media (max-width:992px) {
         min-width: var(--wrapper-medium);

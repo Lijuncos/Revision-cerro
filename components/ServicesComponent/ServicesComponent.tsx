@@ -6,7 +6,7 @@ import React from 'react';
 
 export default function ServicesComponent() {
     return (
-        <section id={data.services.titleLink} className={styles["services-container"]}>
+        <section id={data.services.sectionLink} className={styles["services-container"]}>
             <TitleSectionComponent titletext={data.services.title} />
 
             <div className={styles["services-cards"]}>

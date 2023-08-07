@@ -37,6 +37,12 @@ interface AddressData {
     }
 }
 
+export interface HeadersData {
+    text_id: string,
+    title: string,
+    link: string
+}
+
 interface IconData {
     iconSrc: string,
     iconAlt: string

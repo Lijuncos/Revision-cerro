@@ -24,7 +24,7 @@ export default function NavbarContainer() {
 
     return <NavbarComponent
         isMenu={isMenu}
-        activeItemId={activeItemId}
+        //activeItemId={activeItemId}
         handleClickTitleNavigation={handleClickTitleNavigation}
         handleShowMenu={handleShowMenu}
         menuRef={menuRef}
